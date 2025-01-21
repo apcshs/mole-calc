@@ -18,6 +18,10 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  text-align: center; 
+}
+
 input[type="number"] {
   width: 100%;
   padding: 10px;
@@ -46,20 +50,20 @@ button:hover {
 }
 
 .dark-theme {
-  background-color: #121212; /* Dark body background */
-  color: #fff; /* Ensure all text is readable */
+  background-color: #121212; 
+  color: #fff; 
 }
 
 .dark-theme input,
 .dark-theme button {
-  background-color: #444; /* Darker inputs and buttons */
+  background-color: #444; 
   color: #fff;
-  border-color: #555; /* Adjust borders */
+  border-color: #555; 
 }
 
 .dark-theme .container {
-  background-color: #1e1e1e; /* Dark container */
-  border-color: #444; /* Adjust border color for the container */
+  background-color: #1e1e1e; 
+  border-color: #444; 
 }
 
 @media (max-width: 500px) {
