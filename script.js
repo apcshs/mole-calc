@@ -18,3 +18,9 @@ function clearFields() {
   document.getElementById('molarMass').value = '';
   document.getElementById('result').innerText = '';
 }
+
+function redirectToLink() {
+  window.location.href = 'https://chemistryhub.carrd.co/';
+}
+
+document.getElementById('redirectButton').addEventListener('click', redirectToLink);
