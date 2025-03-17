@@ -9,20 +9,23 @@
 </head>
 
 <body>
+  <div class="top-container">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+    <button id="redirectButton">Home</button>
+    <button id="clearHistoryButton">Clear History</button>
+  </div>
   <div class="container">
     <h1>Mole Calculator</h1>
     <label for="mass">Mass (g):</label>
-    <input type="number" id="mass" placeholder="Enter mass in grams" required>
+    <input type="number" id="mass" placeholder="Enter mass in grams" required min="0">
 
     <label for="molarMass">Molar Mass (g/mol):</label>
-    <input type="number" id="molarMass" placeholder="Enter molar mass in g/mol" required>
+    <input type="number" id="molarMass" placeholder="Enter molar mass in g/mol" required min="0">
 
     <div>
       <button onclick="calculateMoles()">Calculate Moles</button>
       <button onclick="clearFields()">Clear</button>
     </div>
-    <button onclick="toggleTheme()" style="margin-top: 10px;">Toggle Theme</button>
-    <button id="redirectButton">Home</button>
 
     <div class="result" id="result"></div>
   </div>
