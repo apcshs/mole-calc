@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -47,6 +48,12 @@ button:hover {
 .result {
   margin-top: 20px;
   font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.result.show {
+  opacity: 1;
 }
 
 .dark-theme {
@@ -66,17 +73,100 @@ button:hover {
   border-color: #444; 
 }
 
+.dark-theme .top-container {
+  background-color: #1e1e1e; 
+  border-color: #444; 
+}
+
+.dark-theme .history-container {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-theme .history-container p {
+  background: #333;
+  color: #fff;
+}
+
 @media (max-width: 500px) {
   body {
     padding: 10px;
     font-size: 16px;
   }
 
+  .top-container, .container {
+    width: 90%; 
+    max-width: none; 
+  }
+
   input[type="number"] {
     padding: 8px;
+    width: 100%; 
   }
 
   button {
     padding: 8px;
+    width: 100%; 
+    margin-bottom: 5px; 
   }
+
+  div {
+    text-align: center; 
+  }
+
+  .container {
+    padding: 15px;
+    text-align: center;
+  }
+
+  button {
+    width: 100%; 
+    margin: 5px 0; 
+  }
+}
+
+.top-container {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-container {
+  display: none; 
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.history-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.history-container p {
+  font-size: 14px;
+  padding: 5px;
+  background: #f4f4f4;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+#clearHistoryButton {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+#clearHistoryButton:hover {
+  background-color: #ff1a1a;
 }
