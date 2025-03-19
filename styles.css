@@ -41,6 +41,10 @@ button {
   margin-right: 5px;
 }
 
+button i {
+  margin-right: 5px;
+}
+
 button:hover {
   background-color: #d099e0;
 }
