@@ -6,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mole Calculator</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
   <div class="top-container">
-    <button onclick="toggleTheme()">Toggle Theme</button>
-    <button id="redirectButton">Home</button>
-    <button id="clearHistoryButton">Clear History</button>
+    <button onclick="toggleTheme()">
+      <i class="fas fa-adjust"></i> Toggle Theme
+    </button>
+    <button id="redirectButton">
+      <i class="fas fa-home"></i> Home
+    </button>
+    <button id="clearHistoryButton">
+      <i class="fas fa-trash"></i> Clear History
+    </button>
   </div>
   <div class="container">
     <h1>Mole Calculator</h1>
@@ -23,8 +30,12 @@
     <input type="number" id="molarMass" placeholder="Enter molar mass in g/mol" required min="0">
 
     <div>
-      <button onclick="calculateMoles()">Calculate Moles</button>
-      <button onclick="clearFields()">Clear</button>
+      <button onclick="calculateMoles()">
+        <i class="fas fa-calculator"></i> Calculate Moles
+      </button>
+      <button onclick="clearFields()">
+        <i class="fas fa-eraser"></i> Clear
+      </button>
     </div>
 
     <div class="result" id="result"></div>
