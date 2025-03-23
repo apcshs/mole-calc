@@ -119,6 +119,13 @@ button:active {
   .top-container, .container {
     width: 90%; 
     max-width: none; 
+    padding: 15px; 
+    text-align: center; 
+  }
+
+  .top-container button {
+    font-size: 14px; 
+    padding: 5px 10px; 
   }
 
   input[type="number"] {
@@ -134,11 +141,6 @@ button:active {
 
   div {
     text-align: center; 
-  }
-
-  .container {
-    padding: 15px;
-    text-align: center;
   }
 
   button {
